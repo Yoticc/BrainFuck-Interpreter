@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BrainFuckInterpreter;
+﻿namespace BrainFuckInterpreter;
 public class StringInterpreter
 {
     public static byte[] Execute(string code, int allocSize = 30000, int pos = 0)

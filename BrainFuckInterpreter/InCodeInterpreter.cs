@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BrainFuckInterpreter;
+﻿namespace BrainFuckInterpreter;
 public class InCodeInterpreter
 {
     private int pos = 0;
