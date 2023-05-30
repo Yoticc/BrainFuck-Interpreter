@@ -11,7 +11,7 @@ public class StringInterpreter
     public static byte[] Execute(string code, int allocSize = 30000, int pos = 0)
     {
         var bytes = new byte[allocSize];
-        Dictionary<int, int> point = new Dictionary<int, int> { { -9, 0 }, { -2, 0 }, { -1, 0 }, { 0, 0 } };
+        var point = new Dictionary<int, int> { { -9, 0 }, { -2, 0 }, { -1, 0 }, { 0, 0 } };
         Dictionary<byte, Action> types = new(){
             { 62, new(() => pos++) }, { 60, new(() => pos-- ) },
             { 43, new(() => bytes[pos]++ ) }, { 45, new(() => bytes[pos]--) },
